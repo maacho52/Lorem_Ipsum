@@ -10,8 +10,12 @@
   <header>
     <div class="header-contents">
       <img class="header-logo" src="img/logo.png" />
-      <!--div class="header-nav"-->
-        <nav>
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <nav class="nav-content">
           <ul class="nav-list">
             <li class="nav-list-item">Portflio</li>
             <li class="nav-list-item">Feature</li>
@@ -19,7 +23,7 @@
             <li class="nav-list-item">Contact</li>
           </ul>
         </nav>
-      <!--/div-->
+      </div>
     </div>  
   </header>
 </html>
