@@ -112,3 +112,26 @@ header {
   background-color: #ec715f;
   height: 70px;
 }
+
+.container {
+  margin: 0 auto;
+}
+
+#mv {
+  text-align: center;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.mv-title {
+  font-size: 64px;
+  color: white;
+  padding-top: 200px;
+}
+
+.mv-text {
+  color: white;
+  padding-top: 10px;
+}
