@@ -127,11 +127,26 @@ header {
 
 .mv-title {
   font-size: 64px;
-  color: white;
+  color: #fafafa;
   padding-top: 200px;
 }
 
 .mv-text {
-  color: white;
+  color: #fafafa;
+  font-size: 20px;
   padding-top: 10px;
 }
+
+#portfolio {
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 32px;
+  color: #000000;
+  padding-top :90px;
+  padding-bottom: 8px;
+  border-bottom-color: #ec715f;
+  border: 3px solid;
+}
+
