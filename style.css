@@ -142,7 +142,7 @@ header {
   background-color: #eceff1;
 }
 
-.pf-title, .f-title {
+.pf-title, .f-title, .p-title {
   font-size: 32px;
   color: #000000;
   padding-top :90px;
@@ -150,7 +150,8 @@ header {
 }
 
 .pf-title:after,
-.f-title:after {
+.f-title:after,
+.p-title:after {
   content: '';
   display: block;
   width: 70px;/*線の長さ*/
@@ -209,8 +210,10 @@ header {
   margin-right: 0;
 }
 
-#feature {
+#feature,
+#profile {
   text-align: center;
+  padding-bottom: 90px;
 }
 
 .strength {
