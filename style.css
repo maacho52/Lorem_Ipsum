@@ -137,8 +137,7 @@ header {
   padding-top: 10px;
 }
 
-#portfolio,
-#profile {
+#portfolio {
   text-align: center;
   background-color: #eceff1;
 }
@@ -242,6 +241,10 @@ header {
   padding: 10px 10px 0 0;
 }
 
+#profile {
+  text-align: center;
+  background-color: #eceff1;
+}
 
 .p-container {
   width: 980px;
@@ -255,5 +258,5 @@ header {
 }
 
 .profile-group {
-  dipsplay: flex;
+  text-align: center;
 }
