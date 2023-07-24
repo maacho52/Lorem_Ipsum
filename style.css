@@ -22,6 +22,11 @@ header {
   height: 70px;
 }
 
+  /* チェックボックスを非表示にする */
+  .drawer_hidden {
+    display: none;
+  }
+
 .nav-list {
   display: flex;
   width: 100%;
@@ -34,83 +39,6 @@ header {
   font-size: 16px;
   color: white;
   padding: 0 30px 0 30px;
-}
-
-/* チェックボックスを非表示にする */
-.drawer_hidden {
-  display: none;
-}
-
-/* ハンバーガーアイコンの設置スペース */
-.drawer_open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;/* 重なり順を一番上にする */
-  cursor: pointer;
-}
-
-/* ハンバーガーメニューのアイコン */
-.drawer_open span,
-.drawer_open span:before,
-.drawer_open span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background: #ffffff;
-  transition: 0.5s;
-  position: absolute;
-
-}
-
-/* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 8px;
-}
-
-/* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 8px;
-}
-
-/* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
-}
-
-/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-#drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-/* メニューのデザイン*/
-.nav-content {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
-  background: #fff;
-  transition: .5s;
-}
-
-/* アイコンがクリックされたらメニューを表示 */
-#drawer_input:checked ~ .nav-content {
-  left: 0;/* メニューを画面に入れる */
-  background-color: #ec715f;
-  height: 70px;
 }
 
 .container {
@@ -347,4 +275,106 @@ header {
 
 .fa-brands:nth-child(3) {
   padding: 0 20px;
+}
+
+footer {
+  height: 60px;
+  background-color: #ec715f;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 60px;
+}
+
+@media screen and (max-width:767px) {
+  header {
+    height: 50px;
+  }
+  
+  .header-logo {
+    height: 50px;
+  }
+  
+  .header-contents {
+    width: 90%;
+  }
+  .menu-box {
+    border: 1px solid #fafafa;
+    margin: 5px 0 5px auto;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #ffffff;
+    transition: 0.5s;
+    position: absolute;
+  
+  }
+  
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  /* メニューのデザイン*/
+  .nav-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav-content {
+    left: 0;/* メニューを画面に入れる */
+    background-color: #ec715f;
+    height: 40px;
+  }
 }
