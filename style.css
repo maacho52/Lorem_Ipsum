@@ -290,6 +290,11 @@ footer {
   color: #fafafa;
   line-height: 60px;
 }
+@media screen and (min-width:768px) {
+  .br-sp {
+    display: none;
+  }
+}
 
 @media screen and (max-width:767px) {
   header {
@@ -413,4 +418,25 @@ footer {
     display: block;
   }
   
+  .profile-group {
+    display: block;
+  }
+  
+  .br-pc {
+    display: none;
+  }
+  
+  .profile-contents,
+  .p-face {
+    margin: 0 auto;
+    text-align:center;
+  }
+  
+  .pc-title {
+    padding-top: 20px;
+  }
+  
+  .myname {
+    padding-bottom: 0;
+  }
 }
