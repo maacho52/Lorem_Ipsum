@@ -439,4 +439,23 @@ footer {
   .myname {
     padding-bottom: 0;
   }
+  
+  .c-contents {
+    display: block;
+    text-align: center;
+  }
+  
+  .c-info-contents1,
+  .c-info-contents2,
+  .c-sns-contents {
+    text-align: center;
+    
+  }
+  
+  .c-sns-group {
+    padding-top: 20px;
+  }
+  .fa-brands:nth-child(3) {
+    padding: 0 8px;
+  }
 }
